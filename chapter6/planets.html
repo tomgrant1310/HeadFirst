@@ -8,19 +8,51 @@
 </style>
 </head>
 <body>
-<h1>Green Planet</h1>
-<p id="greenplanet">All is well</p> 
-<h1>Red Planet</h1>
-<p id="redplanet">Nothing to report</p> 
-<h1>Blue Planet</h1>
-<p id="blueplanet">All systems A-OK</p>
+<!--<h1>Green Planet</h1>-->
+<!--<p id="greenplanet">All is well</p> -->
+<!--<h1>Red Planet</h1>-->
+<!--<p id="redplanet">Nothing to report</p> -->
+<!--<h1>Blue Planet</h1>-->
+<!--<p id="blueplanet">All systems A-OK</p>-->
+<!--<p id="demo"></p>-->
+<!--<script>-->
+<!--function init() {-->
+	<!--var planet = document.getElementById("greenplanet");-->
+	<!--planet.innerHTML = "Red Alert: hit by phaser fire!"; -->
+	<!--planet.setAttribute("class", "redtext");-->
+<!--}-->
+<!--window.onload = init;-->
+
+
+
+
+
+
 <script>
-function init() {
-	var planet = document.getElementById("greenplanet");
-	planet.innerHTML = "Red Alert: hit by phaser fire!"; 
-	planet.setAttribute("class", "redtext");
-}
-window.onload = init;
+
+
+var testJson = {"employees" : [
+			{"firstName":"John", "lastName": "Doe"},
+			{'firstName': "jane", "lastName": "Peters"},
+			{'firstName': "Andrew", "lastName": "Jones"}
+
+		]}
+
 </script>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"name":"John", "street":"Oslo","phone":"555"}';
+
+	var obj = JSON.parse(text);
+
+	document.getElementById("demo").innerHTML =
+			obj.name + "<br>" +
+					obj.street + "<br>" +
+					obj.phone;
+
+</script>
+
 </body>
 </html>

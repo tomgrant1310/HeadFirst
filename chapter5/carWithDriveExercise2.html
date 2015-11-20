@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toms test auto drive</title>
+
+    <script>
+
+        var polo = {
+            make: "Polo",
+            model: "500",
+            started: false,
+
+            start: function () {
+                this.started = true;
+            },
+
+            stop: function () {
+                this.started = false;
+            },
+
+            drive: function() {
+                if (this.started) {
+                    alert(this.make + " " +
+                    this.model + " goes zoom zoom!");
+                } else {
+                        alert("You need to start the engine!");
+                    }
+                }
+
+            }
+
+        polo.start();
+        polo.drive();
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,33 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Bake (with return)</title>
-  </head>
-  <body>
-  </body>
-  <script>
-function bake(degrees) {
-    var message;
+</head>
+<body>
+</body>
+<script>
+    function bake(degrees) {
+        var message;
 
-    if (degrees > 500) {
-        message = "I'm not a nuclear reactor!";
-    } else if (degrees < 100) {
-        message = "I'm not a refrigerator!";
-    } else {
-        message = "That's a very comfortable temperature for me.";
-        setMode("bake");
-        setTemp(degrees);
+        if (degrees > 500) {
+            message = "I'm not a nuclear reactor!";
+        } else if (degrees < 100) {
+            message = "I'm not a refrigerator!";
+        } else {
+            message = "That's a very comfortable temperature for me.";
+        }
+        return message;
     }
-    return message;
-}
 
-var status = bake(350);
+    console.log(bake(350));
 
-// Here so the code will run!
-function setMode(mode) { };
-function setTemp(degrees) { };
-
-  </script>
+</script>
 </body>
 </html>
+
+
+
+
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<script>-->
+
+    <!--function bake(degrees){-->
+        <!--var message;-->
+
+        <!--if (degrees > 500){-->
+        <!--message = "i'm not a nculear reactor!";-->
+    <!--} else if (degrees < 100) {-->
+        <!--message = "I'm not a refridgerator!";-->
+    <!--} else {-->
+        <!--message = "That's nice!";-->
+        <!--setMode("bake");-->
+        <!--setTemp(degrees);-->
+    <!--}-->
+
+    <!--return message;-->
+
+    <!--}-->
+    <!--var status = bake(350);-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        var age = prompt("Please enter your age");
+
+        var isaNumber = /^[0-9]+$/.test(age);
+
+        console.log(typeof (isaNumber));
+
+        if ((age > 10) && (isaNumber = true)) {
+            alert ("Sorry this site is for under 15's only ");
+        } else {
+            alert  ("welcome to the site");
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
